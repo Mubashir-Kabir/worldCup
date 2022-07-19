@@ -24,6 +24,7 @@
     padding-right: 100px;
     padding-bottom: 0;
     align-items: center;
+    margin-bottom: 130px;
  }
  .bannerDetails{
     margin-bottom: 100px;
@@ -48,7 +49,113 @@
  .bannerImg img{
     width: 100%;
     position: absolute;
-    top: -199px;
+    top: -190px;
     right: -50px;
     
  }
+
+
+ /* ----------------------------
+ main tile and menu section style
+ -------------------------------  */
+ .menuFeedContainer{
+   
+    display: grid;
+    grid-template-columns: 1fr 3.4fr;
+    gap: 24px;
+ }
+ .menubar{
+    padding: 30px;
+    background-color: #161616;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    border-radius: 10px;
+    height: 200px;
+ }
+ .menubar div{
+    /* width: 252px; */
+    height: 64px;
+    padding:5px ;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+
+ }
+ .menubar div a{
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+    color: black;
+    
+ }
+ /* .menubar a::after{
+    background-color: #DD0000;
+    color: white;
+ } */
+
+
+/* card alignment */
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin-bottom: 130px;
+}
+
+
+ /* card design  */
+ .blogCard{
+    border: 1px solid rgba(128, 128, 128,0.2);
+    border-radius: 10px;
+ }
+.blogCard img{
+    width: 100%;
+}
+.cardDetails{
+    margin: 20px;
+}
+.cardDetails button{
+    padding: 4px 15px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-weight: 500;
+}
+.cardDetails p{
+    font-weight: 600;
+    font-size: 18px;
+}
+.cardLogo{
+    opacity: 0.7;
+    display: flex;
+    gap: 30px;
+    margin: 20px;
+}
+.cardLogo i{
+    margin-right: 5px;
+}
+
+
+/* ---------------
+footer design 
+--------------- */
+footer{
+    padding: 100px;
+    text-align: center;
+    color: white;
+    height: 244px;
+    background-color: #161616;
+}
+footer h2{
+    font-weight: 600;
+    font-size: 40px;
+}
+footer hr{
+    margin: 50px 100px;
+    opacity: 0.1;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    margin: 50px;
+}
