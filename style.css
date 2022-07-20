@@ -14,24 +14,31 @@
  banner section style 
  --------------------- */
  .banner{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    display:flex;
+    /* width: 100%; */
+    /* grid-template-columns: repeat(2,1fr); */
     background-color: #161616;
     border-radius: 30px;
     color: white;
     /* padding-top: 100px; */
-    padding-left: 100px;
+    /* padding-left: 100px;
     padding-right: 100px;
-    padding-bottom: 0;
+    padding-bottom: 0; */
     align-items: center;
     margin-bottom: 130px;
+    position: relative;
  }
  .bannerDetails{
+    margin-left: 100px;
     margin-bottom: 100px;
+    margin-right: 10px;
+    width: 40%;
  }
  .bannerDetails h1{
-    font-weight: 700;
+    /* margin-left: 100px; */
     font-size: 70px;
+    font-weight: 700;
+    
     margin-bottom: 0;
  }
  .bannerDetails button{
@@ -43,14 +50,16 @@
     border-radius: 5px;
  }
  .bannerImg{
-    position: relative;
-
+    width: 35%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    position: absolute;
+    bottom: -4px;
+    right: 0;
  }
  .bannerImg img{
     width: 100%;
-    position: absolute;
-    top: -190px;
-    right: -50px;
+    
     
  }
 
@@ -135,13 +144,28 @@
     margin-right: 5px;
 }
 
+/* hidden view allsection */
+.viewAll{
+    display: none;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.viewAll button{
+    color: white;
+    background-color: #DD0000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
 
 /* ---------------
 footer design 
 --------------- */
 footer{
     margin-top: 130px;
-    padding: 100px;
+    padding: 10%;
     text-align: center;
     color: white;
     height: 244px;
@@ -158,9 +182,14 @@ footer hr{
 footer a{
     text-decoration: none;
     color: white;
-    margin: 50px;
 }
-
+.footerMenu{
+    display: flex;
+    column-gap: 60px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 /* ------------------------------
 upcoming matches section design 
 --------------------------------- */
@@ -200,6 +229,61 @@ upcoming matches section design
 /* -----------------
 responsive for tablet
 --------------------- */
-/* @media screen and (min-width:768px) and (max-width:1023px) {
-    
-} */
+@media screen and (min-width:768px) and (max-width:1023px) {
+    /* ----------------
+     banner section style 
+     --------------------- */
+        main {
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-bottom: 0;
+            /* background-color: #161616; */
+        }
+        .banner{
+            margin-bottom: 50px;
+        }
+        .bannerDetails h1{
+            font-size: 40px;
+        }
+        .menuFeedContainer {
+        
+            display: flex;
+            flex-direction: column;
+            /* gap: 24px; */
+        }
+        .menubar{
+            background-color: white;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 30px;
+
+        }
+        .menubar div{
+            width: 30%;
+            height:40px;
+            border: 1px solid rgba(128, 128, 128, 0.2);
+        }
+
+        .blogs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        
+        }
+        .matches {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        
+        }
+        .viewAll{
+            display: block;
+        }
+        footer{
+            margin-top: 0;
+            height: 200px;
+        }
+        footer hr {
+        margin: 50px 0;
+        }
+}
