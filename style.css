@@ -1,6 +1,9 @@
 /*----------------
  Common styles 
  ----------------*/
+/* font-family: 'Chakra Petch',sans-serif;
+font-family: 'Poppins',sans-serif; */
+
  body{
     margin: 0;
     padding: 0;
@@ -8,6 +11,7 @@
  }
  main{
     margin: 50px 140px 0px 140px;
+    font-family: 'Poppins', sans-serif;
  }
 
  /* ----------------
@@ -36,7 +40,7 @@
  }
  .bannerDetails h1{
     /* margin-left: 100px; */
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 700;
     
     margin-bottom: 0;
@@ -50,11 +54,11 @@
     border-radius: 5px;
  }
  .bannerImg{
-    width: 35%;
+    width: 45%;
     margin-bottom: 0;
     padding-bottom: 0;
     position: absolute;
-    bottom: -4px;
+    bottom: -7px;
     right: 0;
  }
  .bannerImg img{
@@ -74,13 +78,15 @@
     gap: 24px;
  }
  .menubar{
+    min-width:200px;
+    height: 200px;
     padding: 30px;
     background-color: #161616;
     display: flex;
     flex-direction: column;
     row-gap: 30px;
     border-radius: 10px;
-    height: 200px;
+    
  }
  .menubar div{
     /* width: 252px; */
@@ -94,7 +100,7 @@
  .menubar div a{
     text-decoration: none;
     display: block;
-    margin-top: 10px;
+    margin-top: 6px;
     color: black;
     
  }
@@ -172,6 +178,7 @@ footer{
     background-color: #161616;
 }
 footer h2{
+    font-family: 'Chakra Petch', sans-serif;
     font-weight: 600;
     font-size: 40px;
 }
@@ -179,7 +186,7 @@ footer hr{
     margin: 5% 5%;
     opacity: 0.1;
 }
-footer a{
+.footerMenu a{
     opacity: 0.6;
     text-decoration: none;
     color: white;
@@ -191,6 +198,21 @@ footer a{
     flex-wrap: wrap;
     justify-content: center;
 }
+.socialLink{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+.socialLink a{
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(215, 210, 210);
+    color:#DD0000;
+    border-radius: 50%;
+    font-size: 25px;
+}
+
 /* ------------------------------
 upcoming matches section design 
 --------------------------------- */
@@ -247,6 +269,13 @@ responsive for tablet
         .banner{
             margin-bottom: 50px;
         }
+        .bannerDetails{
+            margin-left: 50px;
+        }
+        .bannerImg{
+            width: 50%;
+        }
+        
         .bannerDetails h1{
             font-size: 40px;
         }
@@ -335,13 +364,13 @@ responsive for mobile
     .bannerImg{
         width: 70%;
         position: static;
-        margin-bottom: -4px;
+        margin-bottom: -7px;
     }
     .bannerDetails h1 {
     font-size: 22px;
     }
     .bannerDetails p{
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 300;
         opacity: 0.85;
     }
