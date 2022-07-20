@@ -323,7 +323,7 @@ responsive for tablet
         /* footer section style  */
         footer{
             margin-top: 0;
-            height: 200px;
+            min-height: 200px;
         }
         footer hr {
         margin: 50px 0;
