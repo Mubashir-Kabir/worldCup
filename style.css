@@ -42,8 +42,11 @@ font-family: 'Poppins',sans-serif; */
     /* margin-left: 100px; */
     font-size: 60px;
     font-weight: 700;
-    
     margin-bottom: 0;
+
+    animation-name: animTwo;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
  }
  .bannerDetails button{
     margin-top: 15px;
@@ -52,6 +55,11 @@ font-family: 'Poppins',sans-serif; */
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
+ }
+ .bannerDetails button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .2s;
  }
  .bannerImg{
     width: 45%;
@@ -64,9 +72,70 @@ font-family: 'Poppins',sans-serif; */
  .bannerImg img{
     width: 100%;
     
-    
+    /* animation-name: animOne;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; */
  }
 
+ /* style for banner pic animation  */
+ /* @keyframes animOne {
+     0% {
+         opacity: 1;
+     }
+
+     10% {
+         opacity: 0.80;
+     }
+
+     20% {
+         opacity: 0.60;
+     }
+
+     30% {
+         opacity: 0.40;
+     }
+
+     40% {
+         opacity: 0.20;
+     }
+     50% {
+         opacity: 0.10;
+     }
+     60% {
+         opacity: 0.20;
+     }
+     70% {
+         opacity: 0.40;
+     }
+     80% {
+         opacity: 0.60;
+     }
+     90% {
+         opacity: 0.80;
+     }
+     100% {
+         opacity: 1;
+     }
+ } */
+
+ /* style fot heading animation  */
+@keyframes animTwo {
+    0% {
+        color: white;
+    }
+
+    /* 25% {
+        color: yellow;
+    } */
+
+    50% {
+        color:#DD0000;
+    }
+
+    100% {
+        color: white;
+    }
+}
 
  /* ----------------------------
  main tile and menu section style
@@ -274,7 +343,10 @@ responsive for tablet
         }
         .bannerImg{
             width: 50%;
+
+            
         }
+
         
         .bannerDetails h1{
             font-size: 40px;
@@ -370,9 +442,15 @@ responsive for mobile
     font-size: 22px;
     }
     .bannerDetails p{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
         font-size: 12px;
         font-weight: 300;
         opacity: 0.85;
+    }
+    .bannerDetails p:hover{
+        white-space: normal;
     }
 
     /* menubar style  */
