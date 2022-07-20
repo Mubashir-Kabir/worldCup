@@ -96,7 +96,7 @@
 
 
 /* card alignment */
-.blogs, .matches{
+.blogs{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 30px;
@@ -164,6 +164,12 @@ footer a{
 /* ------------------------------
 upcoming matches section design 
 --------------------------------- */
+.matches {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+}
 .match {
     border: 1px solid rgba(128, 128, 128, 0.2);
     border-radius: 10px;
